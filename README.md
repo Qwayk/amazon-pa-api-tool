@@ -48,3 +48,8 @@ If you use an agent runtime that supports “skills” (example: Codex), this to
 
 - Skill: `skills/amazon-pa-api-safe-cli/SKILL.md`
 - Skill docs: `docs/skills_wrappers.md`
+
+## Qwayk
+
+- Start here: https://github.com/Qwayk/start-here
+- Sponsor: https://github.com/sponsors/Qwayk
