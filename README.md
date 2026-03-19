@@ -1,29 +1,43 @@
-# amazon-pa-api-tool (Amazon PA‑API v5)
+# Amazon PA-API tool for AI agents
 
-Read-only CLI for the Amazon Product Advertising API (PA‑API v5).
+This is a public Qwayk proof repo.
 
-## For non-technical users: Start here (no coding)
+It gives AI agents a safe way to work with the Amazon Product Advertising API (PA-API v5).
+In this case, "safe" is simple because the tool is read-only.
 
-Start with these docs:
+## What this tool is for
 
-- Use cases (ideas + benefits): `docs/use_cases.md`
-- Onboarding (setup + what to ask your agent): `docs/onboarding.md`
-- Safety model (how we prevent mistakes): `docs/safety_model.md`
+Use this when you want an agent to help with Amazon product data work like:
+- product research
+- ASIN lookup
+- affiliate link cleanup
+- batch reporting
 
-What you can ask an AI agent to do (examples):
+## Why this repo is public
 
-- “Find 20 candidate products for ‘X’ and give me a shortlist with titles and images.”
-- “Resolve these Amazon URLs into ASINs and build clean affiliate links.”
-- “Create a batch job from my spreadsheet and produce a report of results.”
+This repo shows the Qwayk model in the simplest possible way:
+- real API work
+- local-first usage
+- machine-friendly output
+- no external writes
 
-## Scope and safety (by design)
+It is a good first example because there is no risk of changing Amazon data.
 
-- This tool is **read-only** to Amazon APIs.
-- `--apply` exists for consistency across tools but does not enable external writes here.
+## For non-technical users
 
-## For technical users: Start here (CLI)
+Start here:
+- `docs/use_cases.md`
+- `docs/onboarding.md`
+- `docs/safety_model.md`
 
-Full references:
+Example things to ask your agent:
+- “Find product ideas for this keyword and give me a shortlist.”
+- “Turn these Amazon URLs into ASINs.”
+- “Build clean affiliate links from this list.”
+
+## For technical users
+
+Start here:
 - `docs/quickstart.md`
 - `docs/command_reference.md`
 
@@ -35,21 +49,13 @@ amazon-pa-api-tool auth check
 amazon-pa-api-tool product search --query "test" --limit 1
 ```
 
-## Proof pack (customer-ready)
+## Skills and wrappers
 
-- `docs/proof.md`
-- `docs/references.md`
-- `docs/api_coverage.md`
-- `docs/examples/`
-
-## Skills wrapper
-
-If you use an agent runtime that supports “skills” (example: Codex), this tool ships a minimal safe wrapper:
-
-- Skill: `skills/amazon-pa-api-safe-cli/SKILL.md`
-- Skill docs: `docs/skills_wrappers.md`
+This tool ships with a skill wrapper for agent runtimes that support skills:
+- `skills/amazon-pa-api-safe-cli/SKILL.md`
+- `docs/skills_wrappers.md`
 
 ## Qwayk
 
-- Start here: https://github.com/Qwayk/start-here
-- Sponsor: https://github.com/sponsors/Qwayk
+- Start here: `https://github.com/Qwayk/start-here`
+- Sponsor Qwayk: `https://github.com/sponsors/Qwayk`
